@@ -33,17 +33,17 @@ npm install
 Create a `.env.local` file in the root:
 
 ```env
-# Clerk
-CLERK_SECRET_KEY=sk_test_***
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_***
-NEXT_PUBLIC_CLERK_FRONTEND_API=clerk.***.lcl.dev
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_SUPABASE_KEY=
+NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/events
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/events
+NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/events
+NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/events
 
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-public-anon-key
-NEXT_PUBLIC_SUPABASE_KEY=your-service-role-key
 ```
 
 Make sure you've added a **JWT template named `supabase`** in your Clerk dashboard for Supabase access.
@@ -63,14 +63,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🧪 Demo Credentials
 
-> Replace the `EMAIL` and `PASSWORD` values below with real ones you created in Clerk dashboard.
-
 | Tier      | Email               | Password    |
 |-----------|---------------------|-------------|
-| Free      | `FREE_EMAIL_HERE`   | `PASSWORD`  |
-| Silver    | `SILVER_EMAIL_HERE` | `PASSWORD`  |
-| Gold      | `GOLD_EMAIL_HERE`   | `PASSWORD`  |
-| Platinum  | `PLAT_EMAIL_HERE`   | `PASSWORD`  |
+| Free      | `free+clerk_test@gmail.com`   | `Free@1243`  |
+| Silver    | `silver+clerk_test@gmail.com` | `Silver@1243`  |
+| Gold      | `gold+clerk_test@gmail.com`   | `Gold@12435`  |
+| Platinum  | `platinum+clerk_test@gmail.com`   | `Platinum@1243`  |
 
 ---
 
@@ -80,6 +78,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📩 Contact
 
-If you have questions or issues, reach out to the team at: [your@email.com]
